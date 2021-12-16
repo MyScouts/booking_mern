@@ -1,0 +1,6 @@
+# SERVER
+PORT=3000
+
+# Database
+# Mongoose
+MONGOOSE_URI=mongodb://localhost:27017/booking_db?readPreference=primary&appname=MongoDB%20Compass&directConnection=true&ssl=false

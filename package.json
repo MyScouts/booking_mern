@@ -1,0 +1,41 @@
+{
+  "name": "booking_mern",
+  "version": "1.0.0",
+  "description": "Booking Application Web & Mobile",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon server/index.js",
+    "clients": "npm start --prefix clients",
+    "dev": "concurrently \"npm run server\" \"npm run clients\" ",
+    "seed": "node server/seed/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^6.2.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "4",
+    "express-promise-router": "^4.1.0",
+    "faker": "^5.5.3",
+    "install": "^0.13.0",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.1",
+    "mongoose": "^6.0.6",
+    "mongoose-paginate-v2": "^1.4.2",
+    "mongoose-seed": "^0.6.0",
+    "npm": "^7.24.1",
+    "passport": "^0.4.1",
+    "passport-google-plus-token": "^2.1.0",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "socket.io": "^4.2.0"
+  }
+}
